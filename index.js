@@ -3,12 +3,13 @@ const app = express()
 
 app.get('/', (req, res) => {
     res.json({
-        message: "Welcome to Harate Chatbot Hello"
+        message: "Welcome to Harate Chatbot Hello",
+        port: `${PORT}`
     })
 })
 
 const PORT = process.env.PORT
 
 app.listen(PORT, () => {
-    console.log('App listening on port 3000!');
+    console.log(`App listening on port ${PORT}!`);
 });
