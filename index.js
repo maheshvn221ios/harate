@@ -3,7 +3,7 @@ const app = express()
 
 app.get('/', (req, res) => {
     res.json({
-        message: "Welcome to Harate Chatbot"
+        message: "Welcome to Harate Chatbot Hello"
     })
 })
 
