@@ -4,11 +4,11 @@ const app = express()
 app.get('/', (req, res) => {
     res.json({
         message: "Welcome to Harate Chatbot Hello",
-        port: `${PORT}`
+        // port: `${PORT}`
     })
 })
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
